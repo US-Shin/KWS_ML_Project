@@ -1,0 +1,17 @@
+# Keyword Spotting Project - Requirements
+
+torch
+torchaudio
+transformers
+datasets
+scikit-learn
+matplotlib
+seaborn
+librosa
+gradio
+jiwer
+numpy
+pandas
+tqdm
+soundfile
+huggingface_hub

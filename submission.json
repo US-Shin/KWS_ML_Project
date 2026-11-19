@@ -1,0 +1,11 @@
+{
+  "student_id": "202235271",
+  "name": "신의서",
+  "title": "스마트 홈 음성 명령을 위한 키워드 스포팅(KWS)",
+  "github_url": "[GitHub URL]",
+  "demo_url": "[Demo URL]",
+  "data_type": "audio",
+  "training": "scratch",
+  "models": ["BaselineCNN", "ProposedResCNN"],
+  "primary_metric": "accuracy"
+}
