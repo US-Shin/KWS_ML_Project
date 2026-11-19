@@ -70,10 +70,10 @@ python src/data_preparation.py
 python src/baseline_model.py
 python src/proposed_model.py
 python src/evaluate.py
-python app/demo.py
+python app/app.py
 ```
 
-학습/평가를 생략하고 제공된 가중치로 앱을 실행할 수 있습니다. Python 3.10 이상을 권장합니다. Gradio Share URL을 쓸 때는 `app/demo.py`의 `share=True`가 임시 공유 링크를 생성합니다. 현재 링크는 최대 1주일 후 만료될 수 있고 호스트 앱 프로세스가 종료되면 사용할 수 없습니다. 영구 제출용으로는 Hugging Face Space 주소를 사용하는 편이 좋습니다.
+학습/평가를 생략하고 제공된 가중치로 앱을 실행할 수 있습니다. Python 3.10 이상을 권장합니다.
 
 ## 제출물 구성
 
