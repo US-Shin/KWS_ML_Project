@@ -1,0 +1,8 @@
+gradio==5.49.1
+torch>=2.5,<3
+numpy>=1.26,<3
+librosa>=0.10,<1
+scikit-learn>=1.5,<2
+matplotlib>=3.8,<4
+tqdm>=4.66,<5
+soundfile>=0.12,<1
