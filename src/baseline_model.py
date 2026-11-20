@@ -96,7 +96,7 @@ def train_baseline(epochs=20, batch_size=32, lr=0.001, device="cpu"):
             optimizer.step()
             train_loss += loss.item()
         
-        # 검증 데이터로 성능을 계산합니다.
+        # 검증 데이터로 성능 계산
         model.eval()
         val_loss = 0
         all_preds, all_labels = [], []
@@ -124,7 +124,7 @@ def train_baseline(epochs=20, batch_size=32, lr=0.001, device="cpu"):
             (ROOT / "models").mkdir(parents=True, exist_ok=True)
             torch.save(model.state_dict(), ROOT / "models" / "baseline_cnn.pth")
     
-    # 학습 곡선을 저장합니다.
+    # 학습 곡선 저장
     (ROOT / "results").mkdir(parents=True, exist_ok=True)
     best_epoch = int(np.argmax(history["val_f1"]))
     epochs_axis = np.arange(1, epochs + 1)

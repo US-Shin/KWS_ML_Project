@@ -1,4 +1,4 @@
-# Keyword Spotting for Smart Home Voice Commands
+# 스마트 홈 음성 명령을 위한 KWS
 
 ## 0. 프로젝트 정보
 - **학번·이름**: 202235271 / 신의서

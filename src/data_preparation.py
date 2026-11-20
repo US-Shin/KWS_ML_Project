@@ -65,7 +65,7 @@ def preprocess_audio(audio_array, sr=SAMPLE_RATE, crop_active=True):
     if audio_array.size == 0:
         audio_array = np.zeros(int(sr * DURATION), dtype=np.float32)
 
-    # 입력 전체를 정규화하지 않는다. 
+    # 입력 전체를 정규화하지 않는다.
     # 정규화하면 작은 마이크 잡음도 큰 소리처럼 바뀌게 된다.
     # 실시간 입력에서는 에너지가 가장 큰 1초 구간을 선택해 앞부분만 잘리는 문제를 줄인다.
     if crop_active and len(audio_array) > int(sr * DURATION):
@@ -86,7 +86,8 @@ def preprocess_audio(audio_array, sr=SAMPLE_RATE, crop_active=True):
         audio_array = librosa.resample(audio_array, orig_sr=sr, target_sr=SAMPLE_RATE)
         sr = SAMPLE_RATE
 
-    # 로그 멜 스펙트로그램으로 바꿉니다. ref=1.0으로 입력의 실제 음량 차이를 보존합니다.
+    # 로그 멜 스펙트로그램으로 바꾼다
+    # ref=1.0으로 입력의 실제 음량 차이를 보존한다
     mel = librosa.feature.melspectrogram(
         y=audio_array,
         sr=sr,

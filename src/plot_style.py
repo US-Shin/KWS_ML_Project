@@ -26,7 +26,7 @@ def configure_korean_font():
         except (ValueError, OSError):
             continue
 
-    # 한글 글꼴을 찾지 못해도 그래프 생성은 계속합니다.
+    # 한글 글꼴을 못 찾아도 그래프 생성은 계속함
     plt.rcParams["axes.unicode_minus"] = False
     print("한글 글꼴을 찾지 못했습니다. Windows에서는 맑은 고딕 설치 여부를 확인하세요.")
     return None

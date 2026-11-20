@@ -69,7 +69,7 @@ def train_proposed(epochs=25, batch_size=32, lr=0.0005, device="cpu"):
     train_ds = MelDataset(data["X_train"], data["y_train"])
     val_ds = MelDataset(data["X_val"], data["y_val"])
     
-    # 학습/검증용 데이터 묶음을 만듭니다.
+    # 학습/검증용 데이터 묶음
     train_loader = DataLoader(train_ds, batch_size=batch_size, shuffle=True)
     val_loader = DataLoader(val_ds, batch_size=batch_size)
     

@@ -57,7 +57,7 @@ def evaluate_model(model, X_test, y_test, device, model_name):
     
     row_totals = cm.sum(axis=1, keepdims=True)
     recall_by_row = np.divide(cm, row_totals, out=np.zeros_like(cm, dtype=float), where=row_totals != 0)
-    # 색은 실제 클래스별 정답 비율, 칸의 문자는 개수와 실제 클래스 내 비율입니다.
+    # 색은 실제 클래스별 정답 비율, 칸의 문자는 개수와 실제 클래스 내 비율
     annotations = np.empty(cm.shape, dtype=object)
     for row in range(cm.shape[0]):
         for col in range(cm.shape[1]):
