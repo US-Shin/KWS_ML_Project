@@ -3,7 +3,7 @@
 ## 0. 프로젝트 정보
 - **학번·이름**: 202235271 / 신의서
 - **GitHub URL**: https://github.com/US-Shin/ML_Projects_KWS
-- **데모 URL**: https://3087a3202640a35d42.gradio.live/ (임시 Gradio Share 링크이며 실행 중인 앱에 따라 만료될 수 있음)
+- **데모 URL**: https://3087a3202640a35d42.gradio.live/ (EC2, 임시 Gradio Share 링크이며 실행 중인 앱에 따라 만료될 수 있음)
 
 ## 1. 문제 정의
 - **Who**: 스마트홈 사용자, 음성 비서 사용자, 손이 자유롭지 않은 사용자
